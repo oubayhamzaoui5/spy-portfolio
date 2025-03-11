@@ -22,7 +22,7 @@
     align-items: center;
     padding: 0;
     padding-left: 8px;
-    src: url("/src/assets/fonts/Greenscr.ttf") format("truetype");
+    src: url("/assets/fonts/Greenscr.ttf") format("truetype");
     letter-spacing: 1px;
     padding-right: 60px;
     height: 40px;
