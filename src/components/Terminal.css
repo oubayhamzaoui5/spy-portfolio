@@ -189,7 +189,7 @@
 
 @media (max-width: 768px) {
     .terminal {
-        height: 80vh;
+        height: auto;
         width: 100vw;
         margin-bottom: 80px;
     }
@@ -214,6 +214,7 @@
         margin: 0;
         width: 90vw;
         height: 100%;
+        padding-bottom: 40px;
 
     }
 
