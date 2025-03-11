@@ -32,7 +32,9 @@ const Terminal = () => {
               <a href="https://github.com/oubayhamzaoui5" target="_BLANK">
                 <button>MORE</button>
               </a>
-              <button>DOWNLOAD CV</button>
+              <a href="path/to/cv.pdf" download={import.meta.env.BASE_URL + "assets/Oubay_CV.pdf"}>
+                  <button>DOWNLOAD CV</button>
+              </a>
             </div>
           </div>
           <div className="globe-container">
