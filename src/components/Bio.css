@@ -1,0 +1,177 @@
+.bio {
+    background-color: #000000;
+    color: #00FF00;
+    text-align: left;
+    line-height: 1.6;
+    position: relative;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.bio-container {
+    display: flex;
+    gap: 80px;
+    height: fit-content;
+    width: 90vw;
+}
+.bio-images{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    align-items: end;
+    gap: 5vh;
+
+}
+.bio-image {
+    width: 20vw;
+    height: 20vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #00FF00;
+    position: relative;
+    z-index: 0;
+    
+}
+
+.bio-image::after {
+    content: ""; /* Required */
+    background-color: #000000;
+    position: absolute;
+    width: 105%;  /* Covers most of the width */
+    height: 60%; /* Adjust to control the cut size */
+    
+
+    z-index: 1;
+}
+
+/* Mask the middle (vertical bar) */
+.bio-image::before {
+    content: ""; /* Required */
+    background-color: #000000;
+    position: absolute;
+    width: 60%;  /* Adjust to control the cut size */
+    height: 105%; /* Covers most of the height */
+  
+    z-index: 1;
+}
+
+
+.bio-image img {
+    height: 95%;
+    width: auto;
+
+    position: relative;
+    z-index: 2;
+
+}
+.bio-position{
+    position: relative;
+    text-decoration: underline;
+    font-size: 1.5em;
+    font-weight: 900;
+    letter-spacing: 4px;
+    z-index: 2;
+}
+
+.bio-content {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    border: 2px solid #00FF00;
+    display: flex;
+    height: auto; 
+    flex-direction: column;
+    padding: 8px 12px;
+
+}
+
+.bio-content::after {
+    content: ""; /* Required */
+    background-color: #000000;
+    position: absolute;
+    width: 105%;  /* Adjust to control the cut size */
+    height: 75%; /* Covers most of the height */
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+}
+
+
+/* Mask the middle (vertical bar) */
+.bio-content::before {
+    content: ""; /* Required */
+    background-color: #000000;
+    position: absolute;
+    width: 80%;  /* Adjust to control the cut size */
+    height: 105%; /* Covers most of the height */
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+}
+
+
+
+
+
+.bio-body {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    padding: 10px 0;
+    z-index: 2;
+
+}
+
+@media (max-width: 768px) {
+    .bio {
+        height: fit-content;
+        width: 100vw;
+    }
+    .bio-container{
+        width: 94vw;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding-top: 8px;
+        height: 100%;
+    }
+    .bio-position{
+    
+        font-size: 1.3em;
+
+    }
+    
+    
+.bio-body {
+    font-size: 1em;
+   
+
+}
+.bio-content {
+    margin: 0;
+    width: 84vw;
+    height: 100%;
+    margin-bottom: 8px;
+
+}
+.bio-images{
+    flex-direction: row;
+    width: 90vw;
+    justify-content: space-between;
+}
+.bio-image {
+    width: 40vw;
+    height: 40vw;
+
+    
+}
+.bio-image img{
+    width: 90%;
+height: auto;
+    
+}
+    }
