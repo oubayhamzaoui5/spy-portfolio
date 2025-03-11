@@ -189,9 +189,9 @@
 
 @media (max-width: 768px) {
     .terminal {
-        height: 70vh;
+        height: 85vh;
         width: 100vw;
-        margin-bottom: 30px;
+        margin-bottom: 80px;
     }
 
     .terminal-container {
